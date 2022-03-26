@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Source+Sans+Pro:wght@400;700&display=swap');
+
+:root{
+  --light-background: #E5E7EA;
+  --dark-blue-background: #051026;
+  --secondary-dark-background: #222326;
+  --aside-background: #404040;
+  --light-color: #F2F2F2;
+  --dark-color: #212429;
+  --primary-font:font-family: 'Poppins', sans-serif;
+  --secondary-font: 'Source Sans Pro', sans-serif;
+  --primary-border-size: 2px;
+  --primary-font-size: 75.5%;
+  --icon-size: 22px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  background: var(--secondary-dark-background);
+  color: var(--light-color);
+}
+
+#main-section{
+  overflow: hidden;
+  height: 95vh;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-title{
+  margin: 5px;
+}
+
+#menu-img{
+  width: 25px;
+  margin: 5px;
+  margin-right: 10px;
+}
+
+aside{
+  background: var(--secondary-dark-background);
+}
+
+aside{
+  width: 10%;
+  height: 600px;
+  border: 1px solid dimgray;
+  clear: both;
+  padding: 5px;
+  padding-top: 10px;
+  margin-top: 40px;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  clear: right;
+}
+
+.contents{
+  float: right;
+  width: 50%;
+  position: relative;
+  bottom: 439px;
+  right: 150px;
+}
+
+.contents > p{
+  font-size: 23px;
+  font-family: var(--secondary-font);
+  font-style: italic;
+}
+
+.nav-container{
+  position: relative;
+  top: 130px;
+}
+.nav-container a{
+  display: block;
+  margin-bottom: 10px;
+  
+}
+aside > .nav-container > a > img{
+  width: var(--icon-size);
+}
+
+
+#kaggle{
+  width: 20px;
+}
+
+
+.circle{
+  border: 1px solid;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle-1{
+  width: 30%;
+  height: 60px;
+  top: 18rem;
+  left: 15rem;
+  border-color: skyblue;
+}
+
+.circle-2{
+  width: 15%;
+  height: 30px;
+  top: 16rem;
+  left: 17rem;
+  border-color: green;
+}
+
+.circle-3{
+  width: 5%;
+  height: 10px;
+  top: 18rem;
+  left: 19rem;
+  border-color: maroon;
+}
+
+.angle-down{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  bottom: 110px;
+  animation: animate-angle-down 1s 1s ease infinite;
+}
+
+.angle-down > img{
+  width: var(--icon-size);
+}
+
+@keyframes animate-angle-down{
+  0%{
+    position: relative;
+    bottom: 105px;
+  }
+  100%{
+    position: relative;
+    bottom: 100px;
+  }
+}
+
+
+

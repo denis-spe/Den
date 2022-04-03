@@ -5,7 +5,7 @@
   --dark-blue-background: #051026;
   --secondary-dark-background: #222326;
   --aside-background: #404040;
-  --light-color: #F2F2F2;
+  --font-color: #F2F2F2;
   --dark-color: #212429;
   --primary-font:font-family: 'Poppins', sans-serif;
   --secondary-font: 'Source Sans Pro', sans-serif;
@@ -24,7 +24,7 @@ body {
   font-family: var(--primary-font-family);
   font-size: var(--primary-font-size);
   background: var(--secondary-dark-background);
-  color: var(--light-color);
+  color: var(--font-color);
 }
 
 /* Images size */
@@ -40,7 +40,10 @@ body {
 
 #kaggle{
   width: 13px;
+  margin-left: 5px;
 }
+
+
 
 /* Header Contents */
 .header-container{
@@ -54,67 +57,107 @@ body {
 .main-container{
   margin: 15px;
   padding: 15px;
-  min-height: 500px;
+  /* min-height: 500px; */
 }
 
 /* 
 main Section
  */
 #main-section{
-  min-height: 460px;
+  /* overflow: hidden; */
 }
 
 /** 
   Aside Container
  */
 .aside-container{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height: 45px;
-  align-items: center;
+  float: left;
+  position: relative;
+  bottom: 1.8em;
+  margin-right: 5px;
+  width: 60px;
+  border-right: 1px solid white; 
 }
 
-/***
-  Nav-container
-*/
 .nav-container{
   position: relative;
-  margin: 5px auto;
-}
+  margin: 5px;
+
+} 
 
 .aside-container > .nav-container > a{
   margin-left: 10px;
 }
 
-.top-nav-line{
-  width: 30%;
+.link-icon{
+  width: 35px;
+  height: 35px;
+  margin: 5px 5px 15px;
+  margin-top: 15px;
+  background: #404040;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+  position: relative;
 }
 
-.bottom-nav-line{
-  width: 60%;
+.link-icon:hover{
+  width: 40px;
+  height: 40px;
 }
 
 .contents{
-  margin-top: 50px;
+  margin: 50px;
   display: flex;
-  height: 270px;
-  margin-bottom: 50px;
+  height: 280px;
+  position: relative;
+  bottom: 1.8em;
 }
 
 .intro-contents{
   display: flex;
 }
 
-.intro-img{
-  margin-right: 10%;
-}
-
 .intro-text{
-  margin-top: 15px;
+  margin: 15px;
+}
+.intro-text > p{
+  font-size: 22px;
+  font-family: fantasy, sans-serif;
+  position: relative;
+  top: 3rem;
 }
 
 .angle-down-container{
   display: flex;
   justify-content: center;
   align-content: center;
+  height: 50px;
+  position: relative;
+  bottom: 1px;
+}
+
+#angles-down{
+  position: relative;
+  width: 15px;
+  bottom: 5px;
+  animation: animate-angle-down 0.5s 1s ease-in-out infinite;
+}
+
+@keyframes animate-angle-down{
+  0%{
+    position: relative;
+    bottom: 5px;
+  }
+
+  50%{
+    position: relative;
+    bottom: 4px;
+  }
+  100%{
+    position: relative;
+    top: 2px;
+  }
 }
